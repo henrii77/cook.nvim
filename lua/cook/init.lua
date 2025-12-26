@@ -53,7 +53,7 @@ end, { desc = "Toggle Cook terminal (terminal mode)" })
 vim.keymap.set("n", "<leader>rr", function()
 	commands.cook(vim.fn.expand("%:p"))
 end, {
-	desc = "Run current file with Cook",
+	desc = "Run file with Cook",
 	noremap = true,
 	silent = true,
 })
@@ -62,7 +62,7 @@ end, {
 vim.keymap.set("n", "<leader>ri", function()
 	commands.Coop()
 end, {
-	desc = "Run current file with clipboard as input",
+	desc = "Run file with input",
 	noremap = true,
 	silent = true,
 })
